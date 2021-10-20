@@ -14,4 +14,9 @@ var user = {
   },
 };
 
-// Once you have grabbed the favorite foods. Descontrusct the food array to grab only the first 2 values.
+let favoriteFoods = user.favoriteThings.food;
+console.log(favoriteFoods)
+
+// Once you have grabbed the favorite foods. Destructure the food array to grab only the first 2 values.
+let topTwoFavorites =[favoriteFoods[0], favoriteFoods[1]];
+console.log(topTwoFavorites)
