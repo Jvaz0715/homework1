@@ -2,11 +2,31 @@ Questionnaire:
 
 1. What are javascript functions?
 
+Javascript functions are blocks of reusable code that perform a particular task/operation.
+While we could just rewrite code over and over, in the spirit of "don't repeat yourself" (DRY),
+it is best to put reused code into functions.
+
 2. Explain call-back functions in your own words.
 
+A callback function is a function that is passed into another function as an argument and is "invoked" 
+when the outmost function is called. Written without promises, async/await, or .then, these functions
+are "synchronous". There are both synchronous and asynchronous callbacks.
+
 3. Why are javascript functions first-class citizens? (in your own words, please)
+Functions are considered first-class citizens because of their abilities to be used in various ways
+along with being used even when written out of order.
+
+Functions as first class citizens allows them to be used in the following ways among others:
+-stored as a value i.e.
+   const hello = function() { console.log("hello") return "hello"};
+-passed as an argument to another function
+   function sayHello(hello) { return `${hello()} World`};
 
 4. Explain javascript Closures in your own words.
+
+Closures deal with the scope of a function's access to variables and references surrounding it.
+They are created whenever you create a function. a function inside another function would then
+have access to the outer functions references.
 
 5. When/Why do you use the .then() method of a promise?
 
@@ -14,11 +34,10 @@ Questionnaire:
 
 7. What is the spread operator?
 
-
 8. What is the rest operator?
 
 
-9. What is the difference between the rest operator and the spead operator?
+9. What is the difference between the rest operator and the spread operator?
 
 
 10. What is Object and Array Destructuring in javascript?
