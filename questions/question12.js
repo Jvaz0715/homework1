@@ -17,4 +17,4 @@ const {fetchData} = require('../fancyLibrary')
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// Once you have grabbed the favorite foods. Descontrusct the food array to grab only the first 2 values.
+// Once you have grabbed the favorite foods. Deconstruct the food array to grab only the first 2 values.

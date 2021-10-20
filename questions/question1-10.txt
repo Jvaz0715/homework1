@@ -29,15 +29,28 @@ They are created whenever you create a function. a function inside another funct
 have access to the outer functions references.
 
 5. When/Why do you use the .then() method of a promise?
+   The .then is used when you want something to occur AFTER a promise is resolved, if resolved and not rejected.
+   It is "chained" after the promise such as promise.then((whatGotResolved)=>{"do something with what got resolved"}).
 
 6. When/Why do you use the .catch() method of a promise?
+   Whereas .then handles the resolved of a promise, .catch() handles if there were any errors, or rejected from the promise.
+   it is usually chained after the .then that is chained to the promise.
 
 7. What is the spread operator?
+   The spread operator or ... could be used to expand on arrays, or to shorthand arguments.
+   For example: array1 = [0, 1, 2, 3]
+      if i wanted to copy array1 into a new array and add more, it would look like such array2 = [...array1, newNumber]. 
+
 
 8. What is the rest operator?
+
+rest parameter would go on the last argument, or item in the function to indicate what to bring in. It is also used with .... It makes it easier to declare arrays and variables that follow a pattern without having to write everyting out. Rest becomes its own array/object in a sense.
 
 
 9. What is the difference between the rest operator and the spread operator?
 
+Rest allows us to deconstruct arrays and is used at the last index, spread operator expands it into individual indices
 
 10. What is Object and Array Destructuring in javascript?
+
+Destructuring of objects and arrays allows us to "target" individual data for use while not having to use everything in the array or object. there are various ways to target data in both. 
